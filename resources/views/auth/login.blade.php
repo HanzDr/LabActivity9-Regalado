@@ -10,7 +10,7 @@
             <label for="email">Email</label>
             <input id="email" type="email" name="email" value="{{ old('email') }}"
                    autocomplete="email" required autofocus
-                   class="w-full border rounded p-2">
+                   class="w-full border rounded p-2" placeholder="Email">
             @error('email')
                 <p class="text-red-600 text-sm">{{ $message }}</p>
             @enderror
@@ -20,7 +20,7 @@
             <label for="password">Password</label>
             <input id="password" type="password" name="password"
                    autocomplete="current-password" required
-                   class="w-full border rounded p-2">
+                   class="w-full border rounded p-2" placeholder="Password>
             @error('password')
                 <p class="text-red-600 text-sm">{{ $message }}</p>
             @enderror
